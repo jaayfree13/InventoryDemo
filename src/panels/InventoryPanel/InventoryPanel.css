@@ -1,0 +1,8 @@
+.panel--inventory {
+    
+}
+
+.section-inventory {
+    display: flex;
+    justify-content: center;
+}

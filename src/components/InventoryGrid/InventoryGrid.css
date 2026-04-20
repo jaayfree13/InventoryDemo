@@ -1,0 +1,19 @@
+.inventory-grid {
+  --slot-size: var(--size-lg);
+  --slot-gap: var(--space-sm);
+
+  display: grid;
+  grid-template-columns: repeat(var(--inventory-cols), var(--slot-size));
+  grid-template-rows: repeat(var(--inventory-rows), var(--slot-size));
+  gap: var(--slot-gap);
+
+  width: calc(
+    var(--inventory-cols) * var(--slot-size) +
+    (var(--inventory-cols) - 1) * var(--slot-gap)
+  );
+
+  height: calc(
+    var(--inventory-rows) * var(--slot-size) +
+    (var(--inventory-rows) - 1) * var(--slot-gap)
+  );
+}

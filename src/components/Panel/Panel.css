@@ -1,0 +1,25 @@
+.panel, .panel--core {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+  margin: var(--space-md);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.panel--fixed {
+  width: 600px;
+  height: 600px;
+}
+
+.panel--in-focus {
+  border: 2px solid var(--accent);
+}
+
+.panel__title {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  margin-top: 0;
+}

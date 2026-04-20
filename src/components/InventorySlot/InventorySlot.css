@@ -1,0 +1,46 @@
+.inventory-slot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--slot);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  aspect-ratio: 1;
+  height: var(--size-lg);
+  width: var(--size-lg);
+  z-index: 0;
+}
+
+.inventory-slot:hover {
+  filter: brightness(1.08);
+}
+
+.inventory-slot--selected {
+  background: var(--slot-selected);
+}
+
+.inventory-slot__icon {
+  font-size: var(--size-md);
+  z-index: 1;
+}
+
+.inventory-slot__quantity {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  filter: brightness(2);
+  text-shadow:
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px  1px 0 black,
+      1px  1px 0 black;
+  z-index: 2;
+}

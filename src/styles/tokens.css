@@ -1,0 +1,40 @@
+:root {
+  color-scheme:  dark;
+
+  --size-sm: 32px;
+  --size-md: 48px;
+  --size-lg: 64px;
+  --size-xl: 80px;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.75rem;
+
+  --font: 'Trebuchet MS', 'Verdana', sans-serif;
+
+  --radius: 0px;
+
+  --bg: #14110f;
+  --surface: #2b2320;
+  --panel: #3b312d;
+  --panel-raised: #4a3c36;
+  --border: #8f7969;
+  --text: #f3e9dd;
+  --text-muted: #c7b7a8;
+  --primary: #7fc66a;
+  --primary-dark: #528f43;
+  --secondary: #d7b774;
+  --accent: #f0f5a7;
+  --danger: #d86a6a;
+  --slot: #261f1c;
+  --slot-selected: #516a36;
+
+  --shadow: 0 6px 0 rgba(0, 0, 0, 0.25);
+}
