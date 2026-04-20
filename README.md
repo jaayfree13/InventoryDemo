@@ -16,15 +16,15 @@ The goal is to demonstrate strong **design system thinking**, **keyboard interac
 
   * Item Details
   * Crafting
-  * Chest
+  * Storage
   * Smelting
-  * Brewing
 
 * **Keyboard Controls**
 
   * `Esc` → Pause
-  * `Q` / `C` → Switch tabs
-  * Arrow keys → Navigate
+  * `E` / `C` / `V` / `F` → Switch panel
+  * `Z` / `X` → Switch tabs
+  * `Arrow keys` or `WASD` → Navigate
   * `Tab` → Switch focus
 
 ---

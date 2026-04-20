@@ -1,0 +1,29 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  padding: var(--space-lg);
+}
+
+.modal {
+  width: min(400px, 100%);
+  background: var(--panel);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: var(--space-md);
+}
+
+.modal__title {
+  margin-bottom: var(--space-lg);
+  margin: 0;
+}
+
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+}

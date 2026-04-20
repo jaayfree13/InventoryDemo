@@ -6,11 +6,10 @@ import { Panel } from '../../components/Panel/Panel';
 type InventoryPanelProps = {
 	items: InventorySlotData[];
 	selectedIdx?: number;
-	onSelect: (idx: number) => void;
 	isFocused?: boolean;
 };
 
-export function InventoryPanel({items, selectedIdx, onSelect, isFocused}: InventoryPanelProps) {
+export function InventoryPanel({items, selectedIdx, isFocused}: InventoryPanelProps) {
 	return (
 		<Panel title="Inventory" className={`panel--fixed panel--inventory ${isFocused ? 'panel--in-focus' : ''}`.trim()}>
 			<section className='section-inventory'>
@@ -18,7 +17,6 @@ export function InventoryPanel({items, selectedIdx, onSelect, isFocused}: Invent
 					items={items}
 					selectedIdx={selectedIdx}
 					size={[5, 4]}
-					onSelect={onSelect}
 				/>
 			</section>
 		</Panel>

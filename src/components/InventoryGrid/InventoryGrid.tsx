@@ -11,10 +11,9 @@ type InventoryGridProps = {
     items: InventorySlotData[];
     selectedIdx?: number;
     size: [number, number]; // [cols, rows]
-    onSelect: (idx: number) => void;
 };
 
-export function InventoryGrid({ items, selectedIdx, size, onSelect }: InventoryGridProps) {
+export function InventoryGrid({ items, selectedIdx, size }: InventoryGridProps) {
     const gridStyle: React.CSSProperties = {
         '--inventory-cols': size[0],
         '--inventory-rows': size[1],
@@ -29,7 +28,6 @@ export function InventoryGrid({ items, selectedIdx, size, onSelect }: InventoryG
             label={slot.item?.name ?? 'Empty slot'}
             quantity={slot.quantity}
             selected={idx === selectedIdx}
-            onClick={() => onSelect(idx)}
             />
         ))}
         </div>
